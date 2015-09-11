@@ -1,0 +1,816 @@
+@charset "UTF-8";
+
+/*Estilo desenvolvido especialmente por:
+
+Ayrton Monier
+
+Objetivo;
+Projeto PensE da Secretaria de Ciência, Tecnologia e Inovação do Maranhão
+
+Empresa: VAT Tecnologia da Informação;
+Data: 11/09/2015
+
+-------------------------------------------------
+ESTILO DA PAGINA EM GERAL
+--------------------------------------------------
+*/
+
+
+body{
+	padding: 0;
+	margin: 0;
+}
+
+/*engloba TUDO*/
+.conteiner{
+	margin:0;
+	padding:0;
+	max-width: 100%;
+	background-color: #fff;
+}
+
+/*cabeçalho de uma ponta à outra*/
+.largura-full{
+	max-width: 100%;
+}
+
+/*elementos da página centralizados à 970px*/
+.largura-centro{
+	max-width: 970px;
+	margin: 0px auto;
+}
+
+/*
+--------------------------------------------------
+GENÉRICOS
+--------------------------------------------------
+/*listas de navegação*/
+.lista-em-linha{
+	list-style: none;
+	padding: 0;
+}
+
+/*itens da lista de nav em linha*/
+.lista-em-linha li{
+	display: inline-block;
+}
+
+
+/*
+--------------------------------------------------
+CABEÇALHO - geral
+--------------------------------------------------*/
+
+/*link de acesso aos portais*/
+.sessao-cabecalho a p{
+	padding: 4px 24px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	background: rgba(0,0,0,0.8);
+	display: inline;
+	float: left;
+	color: #fff;
+	margin: 0;
+	font-size: 9pt;
+}
+
+
+/*espacamento ols cabeçalho*/
+.sessao-cabecalho ol{
+	/* padding: 10px 5px; */
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+
+#logo-gov-ma-topo{
+	/* width: 201px; */
+	/* height: 108px; */
+	position:absolute;
+	top: 0;
+	right: 0;
+}
+
+/*
+------------------------------------------------------------------
+CABEÇALHO - sessao1 - [logo + link de acesso ao portal + menu 1
+------------------------------------------------------------------
+
+/*FUNDO sessao1 100% full*/
+.fundo-sessao1-cabecalho{
+	border: 1px solid rgba(255, 255, 255, 0);
+	background: #fff;
+}
+
+
+/*sessao1 centro*/
+.sessao1-cabecalho{
+	position:relative;
+	margin-top: 0;
+	background: url("../img/logo.png") no-repeat center;
+	height: 107px;
+}
+
+/*h1 semantico escondido*/
+.sessao1-cabecalho h1{
+	visibility: hidden;
+}
+
+/*sessao1 - MENU 1 [largura 100% full]*/
+.sessao1-cabecalho-menu{
+	background: rgb(185, 14, 23);
+	/* box-shadow: 9px 9px 19px black; */
+}
+
+/*conteiner do menu [largura centro] */
+.sessao1-cabecalho-conteiner-menu{
+	padding: 2px 0;
+	position:relative;
+	max-height: inherit;
+}
+
+/*ancoras da sessao 1*/
+.sessao1-cabecalho-conteiner-menu a{
+	text-decoration: none;
+	font-family: sans-serif;
+	padding-left: 5px;
+	font-size: 10pt;
+	color: #FFF;
+}
+
+
+/*LISTA drop/down menu1/sessao1
+-----------------------------------------------*/
+
+/*BOTÃO CONTROLE [menu1]
+Lista Drop/Down
+padrão invisível*/
+#bt-menu1{
+	display: none;
+}
+
+
+#bt-menu1:after{
+	content: url("../img/info.png");
+
+}
+
+/*lista sem numeracao e a direita*/
+.menu1-lista-drop-down{
+	padding: 2px 0;
+	list-style: none;
+	text-align: center;
+}
+
+/*itens da lista drop/down bloco de linha*/
+.menu1-lista-drop-down li{
+	display: inline-block;
+}
+
+/*quando tela maximizada com 
+(menu1 drop/down aberto, os itens 
+continuam alinhados à direita)*/
+.menu1-lista-down{
+	list-style: none;
+	text-align: center;
+}
+
+/*quando tela maximizada com 
+(menu1 drop/down aberto, os itens 
+continuam em blocos de linha ao minimizar)*/
+.menu1-lista-down li{
+	display: inline-block;
+}
+
+/*---------------------------------------------*/
+
+
+
+/*
+--------------------------------------------------
+CABEÇALHO - sessao2
+--------------------------------------------------
+/*FUNDO sessao2 100% full*/
+.sessao2-cabecalho{
+	background: rgb(34, 71, 89);
+	text-align: center;
+	box-shadow: 3px 3px 9px black;
+	position: relative;
+}
+
+/*sessao2 - centro
+tamanho da fonte/display dos itens MENU*/
+.sessao2-cabecalho ol li{
+	font-size: 12pt;
+}
+
+/*efeito de mouse no itens*/
+.sessao2-cabecalho ol li a:hover{
+	background: rgb(0,0,0);
+}
+
+/*ancoras da sessao 2*/
+.sessao2-cabecalho a{
+	text-decoration: none;
+	color: #FFFFFF;
+	font-family: sans-serif;
+	padding: 15px 7px;
+	height: inherit;
+}
+
+
+/*LISTA drop/down menu2/sessao2
+-----------------------------------------------*/
+
+/*LOGO MOBILE INVISIVEL*/
+#logo-mobile{
+	display:none;
+}
+
+/*LOGO DO GOVERNO MOBILE INVISIVEL*/
+#logo-gov-mobile{
+	display:none;
+}
+
+#logo-gov-mobile:before{
+	content: url("../img/logo-gov-mobile.png");
+}
+
+/*BOTÃO CONTROLE [menu2]
+Lista Drop/Down
+padrão invisível*/
+#bt-menu2{
+	display: none;
+
+}
+
+#bt-menu2:before{
+	content: url("../img/list.png");
+	text-align: right;
+}
+
+/*lista sem numeracao e a esquerda*/
+.menu2-lista-drop-down{
+	padding: 13px 0;
+	list-style: none;
+}
+
+/*itens da lista drop/down bloco de linha*/
+.menu2-lista-drop-down li{
+	display: inline-block;
+}
+
+/*quando tela maximizada com 
+(menu2 drop/down aberto, os itens 
+continuam alinhados no centro)*/
+.menu2-lista-down{
+	padding: 13px 0;
+	list-style: none;
+	text-align: center;
+}
+
+/*quando tela maximizada com 
+(menu2 drop/down aberto, os itens 
+continuam em blocos de linha ao minimizar)*/
+.menu2-lista-down li{
+	display: inline-block;
+}
+/*---------------------------------------------*/
+
+
+/*NOTA DO TOPO*/
+.nota-topo{
+	margin: 16px auto;
+	background: rgb(185, 14, 23);
+	padding: 20px;
+	color:white;
+	text-align: center;
+	box-shadow: 3px 4px 9px black;
+	max-width: 946px;
+	border-bottom-left-radius: 25px;
+	/* border-bottom-right-radius: 15px; */
+	/* border-top-left-radius: 15px; */
+	border-top-right-radius: 25px;
+	/* border-radius: 6px; */
+}
+
+
+/*
+SESSAO DO CONTEINER DE MÍDIAS PRINCIPAIS
+*/
+.conteiner-painel-midia{
+	margin: 11px;
+}
+
+/*conteiner de mídias*/
+.conteiner-midias{
+	position: relative;
+	margin: 20px;
+	height: 420px;
+}
+
+/*título do thumbnail*/
+.conteiner-midias header h1{
+	font-size: 10pt;
+	border-bottom: 1px solid silver;
+	text-align: center;
+	font-size: 10pt;
+	color: white;
+	margin: 0;
+	padding:5px;
+}
+
+
+/*bloco de mídia principal*/
+.midia{
+	position: relative;
+	height: inherit;
+}
+
+/*posicionamento dos THUMBNAILS de mídia*/
+.midia img{
+	position: relative;
+	top: 30%;
+	display: block;
+	margin:auto;
+
+}
+
+/*rodape dos blocos*/
+.conteiner-midias footer p{
+	border-top: 1px solid silver;
+	text-decoration: none;
+	position: absolute;
+	text-align: center;
+	bottom: 5px;
+	width: 100%;
+	color: white;
+	font-size: 10pt;
+	margin: 0;
+	padding:5px;
+}
+
+/*bloco de mídia principal*/
+#bloco-midia-principal{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 66%; 
+	height: inherit; 
+	background: #224759;
+	border-radius: 5px;
+}
+
+/*bloco de mídia secundário*/
+#bloco-midia-secundaria{
+	position: absolute;
+	right: 2px;
+	width: 32.5%;
+	height: 49%;
+	background: #224759;
+	border-radius: 5px;
+}
+
+/*bloco de midia terciário*/
+#bloco-midia-terciaria{
+	position: absolute;
+	bottom: 0;
+	right: 2px;
+	width: 32.5%;
+	height: 49%;
+	background: #224759;
+	border-radius: 5px;
+}
+
+
+/*
+SESSAO DE BLOCOS
+----------------------------------------
+Estilo blocos de informacoes / noticias / social / etc...
+----------------------------------------
+*/
+
+/*config dos blocos*/
+.sessao-de-blocos{
+	margin: 12px 12px 2px;
+	max-width: 100%;
+	text-align: center;
+	background: rgb(255, 255, 255);
+	border: 1px solid #224759;
+	border-radius: 5px;
+	padding-bottom: 20px;
+}
+
+/*configuracao padrao dos 
+blocos de thumbnail*/
+.bloco-info{
+	display: inline-block;
+	position:relative;
+	height: 261px;
+	width: 292px;
+	margin: 3.2px;
+	border: 1px solid silver;
+	border-radius: 5px;
+	padding: 2.3px;
+	vertical-align: top;
+	background: #224759;
+	color: white;
+}
+
+
+/*titulo das mídias*/
+.bloco-info header h1{
+	border-bottom: 1px solid silver;
+	text-align: center;
+	font-size: 11pt;
+	color: white;
+	margin: 0;
+	padding:4px;
+}
+
+
+/*rodape dos blocos*/
+.bloco-info footer p{
+	position: absolute;
+	bottom: 5px;
+	width:100%;
+	border-top: 1px solid silver;
+	font-size: 9pt;
+	margin: 0;
+	padding:4px;
+}
+
+
+/*esfeitos de mouse do 
+bloco*/
+.bloco-info:hover{
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+/*bt carregar mais vídeos*/
+.bt-carregar-mais-videos{
+	margin: 0px 11px 25px 11px;
+}
+
+
+/*margem do conteiner 
+do formulário de contato*/
+.conteiner-form{
+	margin:11px;
+}
+
+
+
+/*
+------------------------------------------
+RODAPÉ
+-----------------------------------------*/
+/*geral*/
+.sessao-rodape{
+	font-size: 10pt;
+	max-width: 100%;
+	padding-left: 0;
+}
+
+/*ancoras do rodape*/
+.sessao-rodape a{
+	text-decoration: none;
+	color:white;
+	font-family: sans-serif;
+	padding-right: 5px; 
+}
+
+/*espaçamento listas*/
+.sessao-rodape ol{
+	padding: 7px 0;
+	margin: 0;
+}
+
+/*config sessão 1*/
+.sessao1-rodape{
+	text-align: right;
+	background: rgb(238, 204, 206);
+	color: #4D4D4D;
+	box-shadow: 4px 4px 11px black;
+}
+
+/*config sessão 2*/
+.sessao2-rodape{
+	background: rgb(185, 14, 23);
+	color:white;
+	box-shadow: 4px 4px 11px black;
+}
+
+/*config sessão 3*/
+.sessao3-rodape{
+	color:white;
+	background: rgb(34, 71, 89);
+	box-shadow: 4px 4px 11px black;
+}
+
+/*posição de links da esquerda*/
+.posicao-x{
+	display: inline-block;
+	text-align: left;
+	width: 49.7%;
+}
+
+/*posição de links da direita*/
+.posicao-y{
+	display: inline-block;
+	text-align: right;
+	width: 49.7%
+}
+
+
+
+/*
+-----------------------------------------------
+SESSAO RESPONSIVIDADE
+PARA: 980px
+------------------------------------------------*/
+@media only screen and (max-width: 980px){
+
+	/*responsividade - cabecalho*/
+	.sessao1-cabecalho ol{
+		text-align: center;
+	}
+
+	/*RODAPE*/
+	.sessao-rodape{
+		font-size: 9pt;
+	}
+
+	/*RODAPE
+	centralizar*/
+	.sessao1-rodape,
+	.sessao2-rodape,
+	.sessao3-rodape{
+		text-align: center;
+	}
+
+	/*RODAPE
+	itens da esquerda e 
+	direita agora no centro*/
+	.posicao-x,
+	.posicao-y{
+		text-align: center;
+		width: 100%
+	}
+
+
+
+	/*CONTEINER DE ÚLTIMAS MÍDIAS*/
+	.conteiner-midias{
+		position:relative;
+		margin:20px auto;
+		height: 630px;
+		width: 620px;
+	}
+
+	#bloco-midia-principal{
+		position: relative;
+		width: 100%;
+		height: 59%;
+	}
+
+
+	#bloco-midia-secundaria,
+	#bloco-midia-terciaria{
+		width: 49%;
+		height: 39%;
+	}
+
+
+	/*posição bloco de midia secundaria*/
+	#bloco-midia-secundaria{
+		position: absolute;
+		bottom: 0;
+		left: 0;
+	}
+
+	/*posição bloco de midia terciário*/
+	#bloco-midia-terciaria{
+		bottom: 0;
+		right: 0;
+	}
+}
+
+/*
+-----------------------------------------------
+SESSAO RESPONSIVIDADE
+PARA: 647px
+------------------------------------------------*/
+@media only screen and (max-width:647px){
+	
+	.sessao-cabecalho ol {
+	    padding: 8px 5px; */
+	}
+
+	.sessao-cabecalho ol li{
+	    padding: 5px 0; 
+	}
+
+	#logo-gov-ma-topo{
+		display: none;
+	}
+
+	/*LOGO APARECE NA SESSAO2*/
+	#logo-gov-mobile{
+		display: block;
+		position:absolute;
+		top: 3px;
+		left: 12%;
+		z-index: 7;
+	}
+
+	/*CABEÇALHO - SESSAO 1 
+	- cor de fundo do menu*/
+	.sessao1-cabecalho-menu{
+		position: relative;
+		max-width: 100%;
+		z-index: 10;
+	}
+
+	/*CABEÇALHO - MENU1 - SESSAO 1
+	posiciona no canto superior direito*/
+	.sessao1-cabecalho-conteiner-menu{
+		background: #B90E17;
+		border-bottom-left-radius: 15px;
+		box-shadow: 3px 3px 20px black;
+		position: absolute;
+		top:0;
+		right:0;
+	}
+	
+	/*efeito de mouse no itens*/
+	.sessao1-cabecalho-conteiner-menu ol li:hover{
+		background: rgba(0, 0, 0, 0.7);
+	}
+
+
+	/*botao MENU 1 - LISTA DROP/DOWN
+	- Aparece
+	---------------------------------*/
+	#bt-menu1{
+		display: block;
+		padding: 10px;
+		cursor:pointer;
+		text-align: right;
+	}
+
+	/*LISTA DE ITENS DO menu1
+	- Desaparece*/
+	.menu1-lista-drop-down{
+		list-style: none;
+		display: none;
+	}
+
+	/*MENU drop/down
+	 - Sem numeração e 
+	 alinhado a direita*/
+	.menu1-lista-down{
+		list-style: none;
+		text-align: right;
+	}
+
+	/*LISTA DE ITEN - menu2 drop/down
+	- Em blocos*/
+	.menu1-lista-down li{
+		display: block;
+	}
+
+
+	/*botao MENU 2 - LISTA DROP/DOWN
+	- Aparece
+	---------------------------------*/
+	#bt-menu2{
+		display: block;
+		padding: 11px;
+		cursor:pointer;
+		text-align: left;
+	}
+
+	/*LISTA DE ITENS DO menu2
+	- Desaparece*/
+	.menu2-lista-drop-down{
+		list-style: none;
+		display: none;
+	}
+
+	/*MENU drop/down
+	 - Sem numeração e 
+	 alinhado a esquerda*/
+	.menu2-lista-down{
+		list-style: none;
+		text-align: left;
+	}
+
+	/*LISTA DE ITEN - menu2 drop/down
+	- Em blocos*/
+	.menu2-lista-down li{
+		display: block;
+	}
+
+	/*sessao2 - centro
+	tamanho da fonte/display dos itens MENU*/
+	.sessao2-cabecalho ol li{
+		font-size: 12pt;
+	}
+
+	/*efeito de mouse no itens*/
+	.sessao2-cabecalho ol li a:hover{
+		background: none;
+	}
+
+	/*efeito de mouse no itens*/
+	.sessao2-cabecalho ol li:hover{
+		background: rgba(0,0,0,.7);
+	}
+
+
+	/*CONTEINER DE ÚLTIMAS MÍDIAS*/
+	.conteiner-midias{
+		width: 90%;
+		position:relative;
+		margin:20px auto;
+		height: 790px;
+	}
+
+	#bloco-midia-principal,
+	#bloco-midia-secundaria,
+	#bloco-midia-terciaria{
+		position: relative;
+		display:block;
+		width: 100%;
+		height: 32.5%;
+		margin-bottom: 10px;
+	}
+
+}
+
+/*
+-----------------------------------------------
+SESSAO RESPONSIVIDADE
+PARA: 440px
+------------------------------------------------*/
+@media only screen and (max-width: 460px){
+	
+
+	/*MENU FIXO NO TOPO
+	-----------------------------------------------*/
+	#bt-menu1:after{
+    	content: url("../img/logo-mobile.png");
+	}
+
+	/*link de acesso aos portais*/
+	.sessao-cabecalho a p{
+		display: none;
+	}
+
+	/*LOGO SOME*/
+	.sessao1-cabecalho{
+		display: none;
+	}
+
+	/*FIXA SESSAO 1 E 
+	COLOCA NA FRENTE*/
+	.sessao1-cabecalho-conteiner-menu{
+		position: fixed;
+		z-index: 5;
+	}
+
+	/*FIXA SESSAO 2 E 
+	COLOCA NA FRANTE*/
+	.sessao2-cabecalho{
+		position: fixed;
+		top:0;
+		width: 100%;
+		z-index: 5;
+		height: inherit;
+	}
+
+	.nota-topo{
+		margin-top: 81px;
+	}
+
+	/*CONTEINER DE MÍDIAS
+	.conteiner-midias{
+		
+		margin-top: 80px;
+	}
+   */
+	
+}
+
+/*
+-----------------------------------------------
+SESSAO RESPONSIVIDADE
+PARA: 340px
+------------------------------------------------*/
+@media only screen and (max-width: 340px){
+
+	/*Primeiros SMARTS*/
+}
+

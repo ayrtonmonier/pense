@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<!--Marcação desenvolvida por:
+
+    Ayrton Monier
+
+Objetivo;
+Projeto PensE da Secretaria de Ciência, Tecnologia e Inovação do Maranhão
+
+Data: 11/09/2015
+
+-->
+
+<html lang="pt-br">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="author" content="VAT Tecnologia da Informação S.A / Ayrton Monier">
+  <meta name="description" content="Palestras com temáticas importantes como economia, cultura, saúde, segurança e sustentabilidade."> 
+  <meta name="keywords" content="secti, governo, maranhão, pense, ciência, tecnologia, inovação"> 
+  <meta name=viewport content="width=device-width, initial-scale=1">
+  
+  <title>PensE</title>
+
+  <link rel="stylesheet" href="css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="css/estilo.css"/>
+
+</head>
+
+<body>
+
+  <!--conteiner geral 100%-->
+  <div class="conteiner">
+
+     <!-- cabeçalho 100% de largura -->
+     <header class="sessao-cabecalho largura-full">
+
+       <!--LINK de login no portal-->
+       <div class="largura-centro">
+         <a href="http://www.secti.ma.gov.br"><p class="borda">Secretaria de Ciência, Tecnologia e Inovação</p></a>
+       </div>
+
+       <!-- cabeçalho - sessao 1 de 100% de largura (fundo)-->
+       <section class="fundo-sessao1-cabecalho largura-full">
+
+         <!--cabeçalho - sessao 1 - 970px de largura (info)-->
+         <div class="sessao1-cabecalho largura-centro">
+    
+           <h1>Pense</h1> 
+           <img id="logo-gov-ma-topo" src="img/logo-ma.png" alt="Logo do Governo do MAranhão"/>
+
+         </div>
+
+       </section>
+
+       <!--Cabeçalho-->
+       <div class="sessao1-cabecalho-menu largura-full">
+           <!--[Conteiner do Menu]-->
+           <div class="sessao1-cabecalho-conteiner-menu largura-centro">
+
+             <!--BOTÃO DE MENU 1--> 
+             <span id="bt-menu1"></span>
+
+             <nav>
+               <ol class="menu1-lista-drop-down">
+                 <li><a href="#">Contate-nos </a></li>   
+               </ol>
+             </nav>
+           </div>
+       </div>
+
+
+       <!--cabeçalho - sessao 2 de 100% de largura-->
+       <div class="sessao2-cabecalho largura-full">
+         <!--agrupamento header/menu2-->
+         <div class="largura-centro">
+         
+           <!--BOTÃO DE MENU 2--> 
+           <span id="bt-menu2"></span>
+          
+           <!--LOGO MOBILE--> 
+           <span id="logo-mobile"></span>
+
+           <span id="logo-gov-mobile"></span>
+
+           <!--[LISTA DE NAVEGAÇÃO ORDENADA - menu 2]-->
+           <nav>
+             <ol class="menu2-lista-drop-down">
+               <li><a href="#">Ultimas palestras</a></li>
+               <li><a href="#">Palestras por temas </a></li>
+               <li><a href="#">Todos os vídeos </a></li>
+             </ol>
+           </nav>
+         </div>
+       </div>
+    
+    <!--fim cabeçalho -->
+    </header>
+    
+
+    <!--conteiner do corpo-->
+    <section class="largura-centro">
+
+      <!--PAINEL DESCRITIVO DO PENSE-->
+      <div class="jumbotron nota-topo">
+        <h1>Seja Bem Vindo ao PensE!</h1>
+        <p>O Laboratório de Pensamento Estratégico (PensE) foi criado a partir da necessidade de que os debates, feitos em instituições de ensino e pesquisa, ajudem na construção e no aperfeiçoamento de políticas públicas. São pequenas palestras com temáticas importantes como economia, cultura, saúde, segurança e sustentabilidade.</p>
+      </div>
+
+      <!--PALESTRAS RECENTES-->
+      <div class="conteiner-painel-midia">
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h2 class="panel-title">Confira as três últimas palestras</h2>
+          </div>
+          <div class="panel-body">
+            <div class="row">
+              <!--conteiner de ultimas mídias-->
+              <section class="conteiner-midias">
+
+
+                <!--THUMBNAIL MÍDIA PRINCIPAL-->
+                <section id="bloco-midia-principal">
+                  <header>
+                    <h1>Carregando título do vídeo...</h1>
+                  </header>
+                  <section class="midia">
+                    <img src="img/load.gif" alt="Carregando vídeo..."/>
+                  </section>
+                  <footer>
+                    <p>Carregando descrição do vídeo...</p>
+                  </footer>
+                </section>
+
+
+                <!--THUMBNAIL MÍDIA SECUNDÁRIA-->
+                <section id="bloco-midia-secundaria">
+                  <header>
+                    <h1>Carregando o título do vídeo...</h1>
+                  </header>
+                  <section class="midia">
+                    <img src="img/load.gif" alt="Carregando vídeo..."/>
+                  </section>
+                  <footer>
+                    <p>Carregando descrição do vídeo...</p>
+                  </footer>
+                </section>
+
+
+                <!--THUMBNAIL MÍDIA TERCIÁRIA-->
+                <section id="bloco-midia-terciaria">
+                  <header>
+                    <h1>Carregando título vídeo...</h1>
+                  </header>
+                  <section class="midia">
+                    <img src="img/load.gif" alt="Carregando vídeo..."/>
+                  </section>
+                  <footer>
+                    <p>Carregando descrição do vídeo...</p>
+                  </footer>
+                </section>
+
+
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- sessao de blocos / section 2 (6 blocos) -->
+      <section class="sessao-de-blocos">
+
+        <!--NAVEGAÇÃO DE VÍDEOS -->
+        <nav class="navbar navbar-default">
+          <div class="navbar-header">
+            <span class="navbar-brand" href="#">Escolha o tema</span>
+            <button class="navbar-toggle" type="button"
+              data-target=".navbar-collapse" data-toggle="collapse">
+              <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+          </div>
+          <ul class="nav navbar-nav navbar-right navbar-collapse collapse menu-escolha-tema">
+            <li role="presentation" class="active"><a href="#">Cultura</a></li>
+            <li role="presentation" ><a href="#">Saúde</a></li>
+            <li role="presentation" ><a href="#">Segurança</a></li>
+            <li role="presentation" ><a href="#">Sustentabilidade</a></li>
+          </ul>
+        </nav>
+
+
+
+
+        <!--[THUMBNAIL 1]--> 
+        <section class="bloco-info">
+          <header>
+            <h1>Carregando título do vídeo...</h1>
+          </header>
+          <section class="midia">
+            <img src="img/load.gif" alt="Carregando vídeo..."/>
+          </section>
+          <footer>
+            <p>Carregando descrição do video...</p>
+          </footer>
+        </section>
+
+
+        <!--[THUMBNAIL 2]--> 
+        <section class="bloco-info">
+          <header>
+            <h1>Carregando título do vídeo...</h1>
+          </header>
+          <section class="midia">
+            <img src="img/load.gif" alt="Carregando vídeo..."/>
+          </section>
+          <footer>
+            <p>Carregando descrição do video...</p>
+          </footer>
+        </section>
+
+
+        <!--[THUMBNAIL 3]--> 
+        <section class="bloco-info">
+          <header>
+            <h1>Carregando título do vídeo...</h1>
+          </header>
+          <section class="midia">
+            <img src="img/load.gif" alt="Carregando vídeo..."/>
+          </section>
+          <footer>
+            <p>Carregando descrição do video...</p>
+          </footer>
+        </section>
+
+
+        <!--[THUMBNAIL 4]--> 
+        <section class="bloco-info">
+          <header>
+            <h1>Carregando título do vídeo...</h1>
+          </header>
+          <section class="midia">
+            <img src="img/load.gif" alt="Carregando vídeo..."/>
+          </section>
+          <footer>
+            <p>Carregando descrição do video...</p>
+          </footer>
+        </section>
+
+
+        <!--[THUMBNAIL 5]--> 
+        <section class="bloco-info">
+          <header>
+            <h1>Carregando título do vídeo...</h1>
+          </header>
+          <section class="midia">
+            <img src="img/load.gif" alt="Carregando vídeo..."/>
+          </section>
+          <footer>
+            <p>Carregando descrição do video...</p>
+          </footer>
+        </section>
+
+
+        <!--[THUMBNAIL 6]--> 
+        <section class="bloco-info">
+          <header>
+            <h1>Carregando título do vídeo...</h1>
+          </header>
+          <section class="midia">
+            <img src="img/load.gif" alt="Carregando vídeo..."/>
+          </section>
+          <footer>
+            <p>Carregando descrição do video...</p>
+          </footer>
+        </section>
+
+      <!--fim da sessao de blocos-->
+      </section>
+
+      <!--CONTEINER DO FORMULÁRIO-->
+      <div class="conteiner-form">
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h2 class="panel-title">Contate-nos</h2>
+          </div>
+
+          <div class="panel-body">
+            <div class="row">
+              <form action="#" class="col-xs-12 col-sm-12 col-md-12" id="form-contato">
+                <div class="row">
+                  <fieldset class="col-xs-12 col-sm-6 col col-md-6">
+                   <!--NOME-->
+                   <div class="form-group">
+                      <label for="nome">Seu nome</label>
+                      <div class="input-group">
+                        <span class="input-group-addon glyphicon glyphicon-user"></span>
+                        <input type="text" class="form-control" id="nome" name="nome" required>
+                      </div>
+                    </div>
+                    <!--EMAIL-->
+                    <div class="form-group">
+                      <label for="email">Seu e-mail</label>
+                      <div class="input-group">
+                        <span class="input-group-addon">@</span>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="email@exemplo.com" required>  
+                      </div>
+                    </div>
+                    <!--ASSUNTO-->
+                    <div class="form-group">
+                      <label for="ass">Assunto</label>
+                      <div class="input-group">
+                        <span class="input-group-addon glyphicon glyphicon-star"></span>
+                        <input type="text" class="form-control" id="ass" name="assunto" required>
+                      </div>
+                    </div>
+                    <!--CHECK DE NOVIDADES-->
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox" value="sim" name="spam" checked required>
+                        Quero receber infomativos sobre os projetos da SECTI
+                      </label>
+                    </div>
+                  </fieldset>
+            
+                  <fieldset class="col-xs-12 col-sm-6 col col-md-6">
+                    <!--COMENTARIO-->
+                    <div class="form-group">
+                      <label for="msg">Mensagem</label>
+                      <div class="input-group">
+                        <span class="input-group-addon glyphicon glyphicon-envelope"></span>
+                        <textarea  class="form-control" id="msg" name="mensagem" required rows="10"></textarea>
+                      </div>
+                    </div>
+                  </fieldset>
+                </div>
+
+                <!--BOTÃO ENVIAR COMENTÁRIO-->
+                <button type="submit" class="btn btn-primary btn-lg col-lg-12 col-md-12 col-xs-12"/>
+                <span class="glyphicon glyphicon-ok"></span>
+                  Enviar mensagem
+                </button>
+              </form>
+            </div>
+          </div><!--painel-body-->
+        </div><!--painel PRIMARY-->
+      </div><!--conteiner form-->
+    </section>  
+    <!-- fim do conteiner de centro -->
+
+    <!-- RODAPÉ -->
+    <footer class="sessao-rodape">
+      <section class="sessao1-rodape">
+        <!--agrupamento footer/nav 1-->
+        <div class="largura-centro">
+          <nav class="lista-em-linha">
+           <ol>
+             <li>Gostou nosso site? Compartilhe.</li>
+             <li>Plugin Like FB</li>
+             <li>plugin Twittar</li>
+             <li>plugin +1 Google</li>
+           </ol>
+          </nav>
+        </div>
+      </section>
+
+      <!--agrupamento footer/nav2 e nav3-->
+      <section class="sessao2-rodape">
+        <div class="largura-centro">
+          <nav class="posicao-x">
+           <ol class="lista-em-linha">
+             <li>Saiba mais:</li>
+             <li><a href="#">(FB)</a></li>
+             <li><a href="#">(TW)</a></li>
+             <li><a href="#">(YT)</a></li>
+           </ol>
+          </nav>
+
+          <nav class="posicao-y">
+           <ol class="lista-em-linha">
+             <li><a href="#">Portal da SECTI</a></li>
+             <li><a href="#">Portal do Governo do MA</a></li>
+           </ol>
+          </nav>
+        </div>
+      </section>
+
+      <!--agrupamento footer/nav 4-->
+      <section class="sessao3-rodape">
+        <div class="largura-centro">
+        <p class="posicao-x">Copyright &copy; 2015 SECTI. Todos os direitos reservados.</p>
+          <nav class="posicao-y">
+           <ol class="lista-em-linha">
+             <li><a href="#">Política de privacidade</a></li>
+             <li><a href="#">Imprensa</a></li>
+             <li><a href="#">MEC</a></li>
+           </ol>
+          </nav>      
+        </div>
+      </section>
+    <!-- Fim rodapé -->
+    </footer>
+
+  <!-- Fim do conteiner geral -->
+  </div>
+
+  <script src="js/funcoes.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
